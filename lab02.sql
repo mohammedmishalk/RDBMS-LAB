@@ -1,9 +1,9 @@
 create table sales_man(salesman_no varchar(10) primary key,s_name varchar(25) not null,plase varchar(25),phone varchar(10) unique);
-insert into sales_man values('01','savad','mampuram','9866780956');
-insert into sales_man values('02','monu','mampuram','9866787845');
-insert into sales_man values('03','pinju','mampuram','9866782573');
-insert into sales_man values('04','aju','mampuram','9866780353');
-insert into sales_man values('05','muthu','mampuram','9866787656');
+insert into sales_man values('01','nunu','malappuram','9866780956');
+insert into sales_man values('02','monu','malappuram','9866787845');
+insert into sales_man values('03','pinju','malappuram','9866782573');
+insert into sales_man values('04','aju','malappuram','9866780353');
+insert into sales_man values('05','muthu','malappuram','9866787656');
 select * from sales_man;
 
 create table sales_order(
