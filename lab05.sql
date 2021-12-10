@@ -16,9 +16,9 @@ select emp.ename,emp.age,emp.department from employee emp join(
 	department as dept from employee group by department)
 	emp2 on emp.department=dept and emp.age=old;
 	
-//this is also work check both
+--this is also work check both
 select department,max(age) from employee group by department;
-//  //
+
 
 select department,avg(age) from employee group by department;
 select department,avg(salary) from employee group by department;
