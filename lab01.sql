@@ -14,8 +14,8 @@ create table cust_phone as select cust_name,phone from Customer;
 select * from cust_phone;
 
 alter table customer drop column age;
-ALTER TABLE customer ALTER COLUMN cust_name TYPE varchar(25)using
-cust_name;
+ALTER TABLE customer modify cust_name varchar(25);
+
 
 delete from customer;
 
