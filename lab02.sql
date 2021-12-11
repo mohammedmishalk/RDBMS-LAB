@@ -1,4 +1,4 @@
-create table sales_man(salesman_no varchar(10) primary key,s_name varchar(25) not null,plase varchar(25),phone varchar(10) unique);
+create table sales_man(salesman_no varchar(10) primary key,s_name varchar(25) not null,place varchar(25),phone varchar(10) unique);
 insert into sales_man values('01','nunu','malappuram','9866780956');
 insert into sales_man values('02','monu','malappuram','9866787845');
 insert into sales_man values('03','pinju','malappuram','9866782573');
