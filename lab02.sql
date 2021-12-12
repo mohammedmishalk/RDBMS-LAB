@@ -16,7 +16,13 @@ create table sales_order(
 	constraint check_del_type check(del_type in ('P','F')),
 	constraint check_order_status check(order_status in ('inprocess','Fullfilled','Backorder','canselled'))
 );
+insert into sales_order values('O101','05-10-2019','01','P','Fullfilled');
+insert into sales_order values('O102','03-20-2019','02','P','Inprocess');
+insert into sales_order values('O103','02-15-2019','03','P','Fullfilled');
+insert into sales_order values('O104','04-16-2019','01','F','Backorder');
+
 select * from sales_order;
+
 alter table sales_order DROP constraint fk_salesman;
 alter table sales_order drop constraint check_order_status;
 alter table sales_order drop constraint check_del_type;
