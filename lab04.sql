@@ -20,4 +20,4 @@ select * from loan;
 select * from bank_customer where accno in(select distinct accno from deposit)and accno not in (select distinct accno from loan);
 select * from bank_customer where accno not in (select distinct accno from deposit)and accno in (select distinct accno from loan);
 select * from bank_customer where accno in (select distinct accno from deposit)and accno in (select accno distinct from loan);
-select * from bank_customer where accno not in(select accno distinct from deposit) and accno not in (select accno distinct from loan); )
+select * from bank_customer where accno not in(select distinct accno from deposit) and accno not in (select distinct accno from loan); )
